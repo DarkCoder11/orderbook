@@ -1,0 +1,53 @@
+.container {
+  width: 100%;
+  display: flex;
+  padding: 127px 0 100px;
+  align-items: center;
+  flex-direction: column;
+
+  @include breakpoint(desktop) {
+    min-height: calc(100vh - 334px);
+  }
+
+  @include breakpoint(tablet) {
+    min-height: calc(100vh - 744px);
+  }
+
+  @include breakpoint(tablet-m) {
+    min-height: calc(100vh - 724px);
+  }
+
+  &__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 170px;
+    line-height: 199px;
+    color: $secondary-1;
+  }
+
+  &__text {
+    @extend %heading-20;
+    color: $secondary-1;
+    padding: 16px 0 30px;
+  }
+
+  &__btn {
+    @extend %body-regular-14;
+    max-width: 236px;
+    width: 100%;
+    border-radius: 2px;
+
+    a {
+      color: $white;
+    }
+
+    @include breakpoint(tablet-m) {
+      padding: 13px 0;
+      max-width: 288px;
+      font-weight: 700;
+      line-height: 24px;
+      font-size: 16px;
+    }
+  }
+}

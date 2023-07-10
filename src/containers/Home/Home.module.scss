@@ -1,0 +1,41 @@
+.container {
+  background-color: rgb(41, 45, 62);
+  color: rgb(191, 199, 213);
+  max-width: 710px;
+  width: 100%;
+  padding: 17px;
+  border-radius: 4px;
+  display: flex;
+  user-select: none;
+
+  &__expand {
+    border-radius: 4px 4px 0 0;
+  }
+
+  &__book {
+    color: $white;
+    background-color: #1b262d;
+    flex-grow: 0;
+    display: flex;
+    flex-flow: column;
+    max-width: 645px;
+    width: 100%;
+    margin: 45px auto;
+    padding: 5px;
+    user-select: none;
+    box-sizing: border-box;
+
+    h3 {
+      margin: 0;
+      cursor: pointer;
+      font-weight: normal;
+      padding: 10px 0 0 20px;
+      justify-self: flex-start;
+
+      span {
+        color: #888;
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.container {
+  max-width: 1392px;
+  width: 100%;
+  margin: 0 auto;
+
+  @include breakpoint(wide-xl) {
+    max-width: 100%;
+    width: auto;
+    margin: 0 24px;
+  }
+
+  @include breakpoint(tablet-m) {
+    max-width: 100%;
+    width: auto;
+    margin: 0 16px;
+  }
+}

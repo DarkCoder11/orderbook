@@ -1,0 +1,14 @@
+.header {
+  @extend %flex-center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background: $white;
+  box-shadow: 0 16px 20px rgb(0 0 0 / 2%);
+  min-height: 80px;
+
+  @include breakpoint(tablet-m) {
+    min-height: 70px;
+  }
+}

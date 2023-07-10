@@ -1,0 +1,14 @@
+.tools {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+
+  &__action {
+    display: flex;
+    background: transparent;
+    color: $white;
+    text-transform: uppercase;
+    flex-grow: 0;
+    padding: 10px;
+  }
+}
